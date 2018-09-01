@@ -6,7 +6,7 @@
     <div>
       <router-view></router-view>
     </div>
-    <router-link to="/cart">去购物车</router-link>
+    <router-link v-bind:to="{name:'cart',params:{goodsId:123}}">去购物车</router-link>
     <button v-on:click="jump">去购物车</button>
   </div>
 
